@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Бытсервис плюс: листогиб, доборные элементы кровли, Ушачи</title>
+<meta name="description" content="Изделия из гладкого металла с полимерным покрытием: коньки, ветровые планки, снегозадержатели, отливы, откосы, заборы, жалюзи. Ушачи, Лепель, Орша. +375 (29) 173-12-78.">
+<meta property="og:title" content="Бытсервис плюс: листогиб, доборные элементы кровли, Ушачи">
+<meta property="og:description" content="Изделия из гладкого металла с полимерным покрытием: коньки, ветровые планки, снегозадержатели, отливы, откосы, заборы, жалюзи. Ушачи, Лепель, Орша. +375 (29) 173-12-78.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#EFF1F0">
+<style>
+:root{--bg:#EFF1F0;--bg2:#E3E7E5;--ink:#14181A;--ink2:#2B3235;--red:#C1121F;--red2:#8F0E18;
+--zinc:#6C7679;--line:rgba(20,24,26,.15);--white:#FBFCFB;--pad:22px;--max:1300px;
+--d:'Familjen Grotesk',system-ui,sans-serif;--b:'Golos Text',system-ui,sans-serif;--m:'Spline Sans Mono',ui-monospace,monospace}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.62 var(--b);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}h1,h2,h3{margin:0;font-family:var(--d);font-weight:700;line-height:.99;letter-spacing:-.03em}
+a{color:inherit;text-decoration:none}[hidden]{display:none!important}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.header{position:sticky;top:0;z-index:40;background:rgba(239,241,240,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+.header__in{display:flex;align-items:center;gap:16px;padding:11px 0}
+.logo{display:flex;align-items:center;gap:9px}
+.logo__mark{width:38px;height:38px;border:1.5px solid var(--ink);display:grid;place-items:center;background:var(--red);color:#fff;font:700 15px/1 var(--d)}
+.logo__txt{display:flex;flex-direction:column;line-height:1.15}
+.logo__txt b{font:700 14px/1 var(--d)}
+.logo__txt i{font:500 8px/1.5 var(--m);letter-spacing:.1em;text-transform:uppercase;color:var(--zinc);font-style:normal}
+.nav{display:flex;gap:14px;margin-left:auto;font:500 12.5px/1 var(--b)}
+.nav a{padding:6px 0;border-bottom:1px solid transparent}
+.nav a:hover,.nav a.is-on{border-color:var(--red);color:var(--red)}
+.header__tel{font:600 13px/1 var(--b);white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;font:600 11.5px/1 var(--b);letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--red);background:var(--red);color:#fff;cursor:pointer;transition:.18s}
+.btn:hover{background:var(--red2);border-color:var(--red2)}
+.btn--dark{background:var(--ink);border-color:var(--ink);color:#fff}
+.btn--dark:hover{background:#000}
+.btn--ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn--ghost:hover{background:var(--ink);color:#fff}
+.burger{display:none;width:42px;height:36px;border:1px solid var(--ink);background:transparent;align-items:center;justify-content:center;flex-direction:column;gap:4px;cursor:pointer}
+.burger i{display:block;width:16px;height:1px;background:var(--ink)}
+.burger.is-close i:first-child{transform:rotate(45deg) translateY(3px)}
+.burger.is-close i:last-child{transform:rotate(-45deg) translateY(-3px)}
+.drawer{position:fixed;inset:0;z-index:90;background:rgba(15,18,20,.76);display:none}
+.drawer[data-open]{display:block}
+.drawer__in{position:absolute;inset:0 0 0 auto;width:min(400px,92vw);background:var(--bg);padding:18px;overflow-y:auto}
+.drawer__top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.drawer__nav{display:grid;font:700 21px/1 var(--d);letter-spacing:-.01em}
+.drawer__nav a{padding:13px 0;border-bottom:1px solid var(--line)}
+.drawer__cta{width:100%;margin-top:16px}
+.drawer__note{font-size:12px;color:var(--zinc);margin-top:10px}
+body.is-locked{overflow:hidden}
+.hero{position:relative;min-height:min(94svh,820px);display:flex;align-items:flex-end;overflow:hidden;background:#0F1315}
+.hero__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,16,18,.5),rgba(12,16,18,.12) 42%,rgba(12,16,18,.8) 78%,#0F1315 100%)}
+.hero__in{position:relative;z-index:2;width:100%;padding:clamp(28px,4.6vw,58px) 0 clamp(14px,2vw,22px);color:#F4F7F6}
+.hero h1{font-size:clamp(2rem,5.6vw,4.6rem);letter-spacing:-.04em;color:#fff}
+.hero h1 em{font-style:normal;color:#FF8A8A}
+.hero__lede{max-width:44ch;margin:14px 0 18px;color:rgba(244,247,246,.86)}
+.hero__acts{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:clamp(14px,2.2vw,26px)}
+.hero__acts .btn--ghost{color:#fff;border-color:rgba(255,255,255,.6)}
+.hero__acts .btn--ghost:hover{background:#fff;color:var(--ink)}
+.hero__facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid rgba(255,255,255,.28);gap:0 12px}
+.hero__facts div{padding:11px 0 0}
+.hero__facts b{display:block;font:700 clamp(.92rem,1.4vw,1.1rem)/1.2 var(--d)}
+.hero__facts span{font:500 8.5px/1.5 var(--m);letter-spacing:.06em;text-transform:uppercase;color:#FF8A8A}
+@media (max-width:1024px){.nav{display:none}.burger{display:flex}.header__tel{display:none}.hero__facts{grid-template-columns:1fr 1fr}}
+@media (max-width:380px){.header .btn{display:none}}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@600;700&family=Golos+Text:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.v1.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="header"><div class="header__in wrap">
+<a class="logo" href="index.html"><span class="logo__mark">Б+</span><span class="logo__txt"><b>Бытсервис плюс</b><i>листогиб · Ушачи</i></span></a>
+<nav class="nav" aria-label="Основное меню"><a href="index.html" class="is-on">Главная</a><a href="produkciya.html">Продукция</a><a href="krovlya.html">Кровля</a><a href="otkosy.html">Окна</a><a href="zabori.html">Заборы</a><a href="dostavka.html">Доставка</a><a href="o-kompanii.html">О компании</a><a href="kontakty.html">Контакты</a></nav>
+<a class="header__tel" href="tel:+375291731278">+375 (29) 173-12-78</a>
+<a class="btn" href="#zayavka">Рассчитать метраж</a>
+<button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="drawer"><i></i><i></i><i></i></button>
+</div></header>
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Меню" hidden>
+<div class="drawer__in">
+<div class="drawer__top">
+<a class="logo" href="index.html"><span class="logo__mark">Б+</span><span class="logo__txt"><b>Бытсервис плюс</b><i>Ушачи</i></span></a>
+<button class="burger is-close" type="button" data-close aria-label="Закрыть меню"><i></i><i></i></button>
+</div>
+<nav class="drawer__nav"><a href="index.html">Главная</a><a href="produkciya.html">Продукция</a><a href="krovlya.html">Кровля</a><a href="otkosy.html">Окна</a><a href="zabori.html">Заборы</a><a href="dostavka.html">Доставка</a><a href="o-kompanii.html">О компании</a><a href="kontakty.html">Контакты</a></nav>
+<a class="btn drawer__cta" href="tel:+375291731278">Позвонить +375 (29) 173-12-78</a>
+<p class="drawer__note">Гибка гладкого металла с полимерным покрытием: коньки, ветровые планки, отливы, откосы, снегозадержатели, заборы. Цвета по RAL. Бесплатная доставка в Ушачи, Лепель и Оршу каждые выходные.</p>
+</div></div>
+<main>
+<section class="hero">
+<img class="hero__img" src="assets/img/hero.jpg" alt="Доборные элементы на кровле" width="1536" height="1024" fetchpriority="high">
+<div class="hero__in"><div class="wrap">
+<h1>Доборные элементы<br>из гладкого металла<br><em>по вашему размеру</em></h1>
+<p class="hero__lede">Коньки, ветровые планки, отливы, откосы, снегозадержатели, заборы и жалюзи. Полимерное покрытие, большой выбор цвета по RAL. Гибка на своём листогибе, доставка бесплатно каждые выходные.</p>
+<div class="hero__acts">
+<a class="btn" href="#zayavka">Рассчитать метраж</a>
+<a class="btn btn--ghost" href="#calc">Собрать профиль</a>
+</div>
+<div class="hero__facts">
+<div><b>Свой листогиб</b><span>Ушачи</span></div>
+<div><b>Цвет по RAL</b><span>полимерное покрытие</span></div>
+<div><b>Бесплатно</b><span>доставка по выходным</span></div>
+<div><b>По размеру</b><span>без сварных стыков</span></div>
+</div>
+</div></div>
+</section>
+
+<section class="section"><div class="wrap">
+<div class="sec-head"><div><p class="eyebrow">профили</p><h2 class="h2">Что гнём<br><em>на листогибе</em></h2></div>
+<p>Восемь групп изделий. Любая позиция — по вашему размеру, цвету и толщине металла.</p></div>
+<div class="profiles">
+<article class="prof"><svg viewBox="0 0 120 64" aria-hidden="true"><path d="M8 48 L40 16 L60 34 L80 16 L112 48" fill="none" stroke="#14181A" stroke-width="2.2" stroke-linejoin="round"/><path d="M8 48 L8 56 M112 48 L112 56" stroke="#C1121F" stroke-width="2"/></svg><b>Конёк</b><span>190/195 мм</span><p>Закрывает стык скатов. Делаем полукруглый и плоский, с рёбрами жёсткости и заглушками на торцы.</p></article><article class="prof"><svg viewBox="0 0 120 64" aria-hidden="true"><path d="M14 14 L14 48 L106 48 L106 56" fill="none" stroke="#14181A" stroke-width="2.2" stroke-linejoin="round"/><path d="M14 34 L40 34" stroke="#C1121F" stroke-width="1.6" stroke-dasharray="3 3"/></svg><b>Ветровая планка</b><span>100×20 мм</span><p>Закрывает торец кровли и лобовую доску. Гнём под ваш угол, полку подбираем по ширине свеса.</p></article><article class="prof"><svg viewBox="0 0 120 64" aria-hidden="true"><path d="M12 16 L12 34 L96 34 L96 26 L104 26 L104 44" fill="none" stroke="#14181A" stroke-width="2.2" stroke-linejoin="round"/><path d="M12 16 L34 16" stroke="#C1121F" stroke-width="1.6" stroke-dasharray="3 3"/></svg><b>Отлив и капельник</b><span>150/200 мм</span><p>Отводит воду от стены и фундамента. Двойная отбортовка, чтобы вода не шла под планку.</p></article><article class="prof"><svg viewBox="0 0 120 64" aria-hidden="true"><path d="M18 10 L18 34 L98 34 L98 22 L110 22" fill="none" stroke="#14181A" stroke-width="2.2" stroke-linejoin="round"/><path d="M46 10 L46 34" stroke="#C1121F" stroke-width="1.6" stroke-dasharray="3 3"/></svg><b>Откос на окно</b><span>по замеру мм</span><p>Наружные откосы из гладкого металла: ровные, не выгорают, моются. С отливом и заглушками.</p></article><article class="prof"><svg viewBox="0 0 120 64" aria-hidden="true"><path d="M20 12 L20 48 L100 48" fill="none" stroke="#14181A" stroke-width="2.2" stroke-linejoin="round"/><path d="M20 34 L44 34" stroke="#C1121F" stroke-width="1.6" stroke-dasharray="3 3"/></svg><b>Уголок и нащельник</b><span>40×40 мм</span><p>Закрывает наружные углы фасада, примыкания и стыки панелей.</p></article><article class="prof"><svg viewBox="0 0 120 64" aria-hidden="true"><circle cx="46" cy="22" r="11" fill="none" stroke="#14181A" stroke-width="2.2"/><path d="M46 33 L46 46 L78 46 L78 38" fill="none" stroke="#14181A" stroke-width="2.2"/><path d="M78 46 L100 46" stroke="#C1121F" stroke-width="2"/></svg><b>Снегозадержатель</b><span>труба 15/25 мм</span><p>Трубчатый или пластинчатый: держит снег на скате и не даёт ему сходить пластом на голову.</p></article><article class="prof"><svg viewBox="0 0 120 64" aria-hidden="true"><path d="M18 12 L18 52 M34 12 L34 52 M50 12 L50 52 M66 12 L66 52 M82 12 L82 52 M98 12 L98 52" stroke="#14181A" stroke-width="2.2"/><path d="M12 24 L104 24 M12 40 L104 40" stroke="#C1121F" stroke-width="1.6" stroke-dasharray="3 3"/></svg><b>Забор и жалюзи</b><span>по замеру мм</span><p>Столбы, лаги, полосы жалюзи из окрашенного металла. Собираем комплект под ваш размер.</p></article><article class="prof"><svg viewBox="0 0 120 64" aria-hidden="true"><path d="M14 46 L38 18 L70 18 L92 46 L104 46" fill="none" stroke="#14181A" stroke-width="2.2" stroke-linejoin="round"/><path d="M38 18 L38 8 M70 18 L70 8" stroke="#C1121F" stroke-width="1.6"/></svg><b>Другое из листа</b><span>по чертежу мм</span><p>Если нужна нестандартная деталь — гнём по вашему размеру, эскизу или образцу.</p></article>
+</div>
+<p style="margin-top:16px"><a class="btn btn--ghost" href="produkciya.html">Весь каталог</a></p>
+</div></section>
+
+<div class="fold" aria-hidden="true"><i style="left:18%"></i><i style="left:52%"></i><i style="left:81%"></i></div>
+
+
+<section class="section section--dim anchor" id="calc"><div class="wrap">
+<div class="sec-head"><div><p class="eyebrow">конфигуратор</p><h2 class="h2">Соберите позиции<br><em>и увидите развёртку</em></h2></div>
+<p>Выберите элемент, цвет по RAL, толщину металла и метраж: слева перерисуется сечение с размерами, справа посчитается ширина заготовки, площадь и вес.</p></div>
+<div class="cfg">
+<div class="stage">
+<svg id="cfgSvg" viewBox="0 0 520 300" role="img" aria-label="Сечение элемента с размерами"></svg>
+<div style="display:flex;justify-content:space-between;gap:8px;margin-top:10px;font:500 8.5px/1.4 var(--m);letter-spacing:.06em;text-transform:uppercase;color:var(--zinc)">
+<span>развёртка: <b id="cDev" style="color:var(--ink)">—</b></span><span>металл: <b id="cThick" style="color:var(--ink)">0,5 мм</b></span><span>цвет: <b id="cCol" style="color:var(--ink)">RAL 7016</b></span>
+</div>
+</div>
+<div>
+<div class="ctrl">
+<div class="crow"><label>Элемент</label><div class="seg" id="cType">
+<button type="button" data-v="ridge" aria-pressed="true">Конёк</button>
+<button type="button" data-v="vetro" aria-pressed="false">Ветровая</button>
+<button type="button" data-v="otliv" aria-pressed="false">Отлив</button>
+<button type="button" data-v="otkos" aria-pressed="false">Откос</button>
+<button type="button" data-v="sneg" aria-pressed="false">Снегозадержатель</button>
+</div></div>
+<div class="crow"><label>Цвет покрытия (RAL)</label><div class="swatches" id="cSw"></div></div>
+<div class="crow"><label>Толщина металла</label><div class="seg" id="cTh">
+<button type="button" data-v="0.45" aria-pressed="true">0,45 мм</button>
+<button type="button" data-v="0.5" aria-pressed="false">0,5 мм</button>
+<button type="button" data-v="0.7" aria-pressed="false">0,7 мм</button>
+</div></div>
+<div class="crow"><label>Метраж: <b id="vL">24 м</b></label><input class="rng" id="cL" type="range" min="2" max="120" step="1" value="24"></div>
+<div class="crow"><label>Полка (ширина рабочей части): <b id="vA">100 мм</b></label><input class="rng" id="cA" type="range" min="40" max="300" step="5" value="100"></div>
+<div class="crow"><label>Высота профиля: <b id="vHh">90 мм</b></label><input class="rng" id="cH" type="range" min="30" max="250" step="5" value="90"></div>
+</div>
+<div class="out" style="margin-top:14px">
+<table class="spec"><tbody id="cSpec"></tbody></table>
+<p class="formula" id="cFormula"></p>
+<p class="note">Расчёт по геометрии профиля и весу стали 7850 кг/м³. Итоговую длину листа, раскрой и цену уточняем при заказе: длинные элементы гнём целиком, без сварных стыков.</p>
+<a class="btn" id="cGo" href="https://wa.me/375291731278" target="_blank" rel="noopener">Отправить расчёт</a>
+</div>
+</div>
+</div>
+</div></section>
+
+
+<section class="section"><div class="wrap">
+<div class="sec-head"><div><p class="eyebrow">покрытие</p><h2 class="h2">Цвет, который<br><em>не выгорает</em></h2></div>
+<p>Работаем с гладким металлом в полимерном покрытии: полиэстер и матовые серии. Цвет подбираем по RAL под кровлю, фасад и забор.</p></div>
+<div class="two">
+<div class="prose">
+<h3>Почему гладкий металл, а не обычная краска</h3>
+<p>Полимерное покрытие нанесено на заводе и запечено: оно не облезает плёнкой, не требует подкраски через сезон и нормально переносит наши зимы. Планка, которую покрасили «по месту», через год выглядит хуже, чем выглядела в день установки.</p>
+<p>Толщина 0,45–0,5 мм — обычный выбор для доборных элементов, 0,7 мм берут там, где на планку опираются или она работает как отбойник.</p>
+<h3>Что важно в гибке</h3>
+<ul>
+<li>Гнуть по радиусу, а не «в угол», чтобы покрытие не треснуло на сгибе</li>
+<li>Резать с защитной плёнкой, чтобы не поцарапать лицевую сторону</li>
+<li>Держать геометрию: перекос планки видно на кровле сразу</li>
+<li>Не делать стык посередине ската без необходимости</li>
+</ul>
+</div>
+<div>
+<div class="card" style="margin-bottom:12px"><p class="eyebrow">выкрасы</p>
+<div class="swatches" style="gap:8px">
+<div style="display:grid;gap:4px;width:66px"><span style="display:block;height:44px;background:#3A4247;border:1px solid rgba(20,24,26,.2)"></span><span style="font:500 8px/1.3 var(--m);color:var(--zinc)">RAL 7016</span><span style="font:500 8px/1.3 var(--b);color:var(--ink)">Антрацит</span></div><div style="display:grid;gap:4px;width:66px"><span style="display:block;height:44px;background:#45302A;border:1px solid rgba(20,24,26,.2)"></span><span style="font:500 8px/1.3 var(--m);color:var(--zinc)">RAL 8017</span><span style="font:500 8px/1.3 var(--b);color:var(--ink)">Шоколад</span></div><div style="display:grid;gap:4px;width:66px"><span style="display:block;height:44px;background:#114A3A;border:1px solid rgba(20,24,26,.2)"></span><span style="font:500 8px/1.3 var(--m);color:var(--zinc)">RAL 6005</span><span style="font:500 8px/1.3 var(--b);color:var(--ink)">Зелёный мох</span></div><div style="display:grid;gap:4px;width:66px"><span style="display:block;height:44px;background:#5E2129;border:1px solid rgba(20,24,26,.2)"></span><span style="font:500 8px/1.3 var(--m);color:var(--zinc)">RAL 3005</span><span style="font:500 8px/1.3 var(--b);color:var(--ink)">Вишня</span></div><div style="display:grid;gap:4px;width:66px"><span style="display:block;height:44px;background:#E8E8E2;border:1px solid rgba(20,24,26,.2)"></span><span style="font:500 8px/1.3 var(--m);color:var(--zinc)">RAL 9003</span><span style="font:500 8px/1.3 var(--b);color:var(--ink)">Белый</span></div><div style="display:grid;gap:4px;width:66px"><span style="display:block;height:44px;background:#1B3F73;border:1px solid rgba(20,24,26,.2)"></span><span style="font:500 8px/1.3 var(--m);color:var(--zinc)">RAL 5005</span><span style="font:500 8px/1.3 var(--b);color:var(--ink)">Сигнальный синий</span></div><div style="display:grid;gap:4px;width:66px"><span style="display:block;height:44px;background:#E3D6B8;border:1px solid rgba(20,24,26,.2)"></span><span style="font:500 8px/1.3 var(--m);color:var(--zinc)">RAL 1015</span><span style="font:500 8px/1.3 var(--b);color:var(--ink)">Слоновая кость</span></div><div style="display:grid;gap:4px;width:66px"><span style="display:block;height:44px;background:#42474B;border:1px solid rgba(20,24,26,.2)"></span><span style="font:500 8px/1.3 var(--m);color:var(--zinc)">RAL 7024</span><span style="font:500 8px/1.3 var(--b);color:var(--ink)">Графит</span></div>
+</div>
+<p class="note">Оттенки на экране приблизительные. Точный цвет показываем по вееру RAL и образцу металла.</p></div>
+<div class="gal" style="grid-template-columns:1fr"><figure><img src="assets/img/stack.jpg" alt="Готовые профили разных цветов" width="1024" height="1024" loading="lazy"><figcaption>Готовые профили · разные RAL</figcaption></figure></div>
+</div>
+</div></div></section>
+
+<section class="section section--dark"><div class="wrap">
+<div class="sec-head"><div><p class="eyebrow">доставка</p><h2 class="h2">Привозим<br><em>по выходным</em></h2></div>
+<p>Каждые выходные — бесплатно в Ушачи, Лепель и Оршу. Другие адреса Витебской области обсуждаем отдельно.</p></div>
+<div class="towns">
+<div class="town town--free"><span>бесплатно</span><b>Ушачи</b><p>Свой город и район. Привозим на объект, помогаем разгрузить длинномер.</p></div>
+<div class="town town--free"><span>бесплатно</span><b>Лепель</b><p>Каждые выходные. Согласуем день и время, чтобы вы были на объекте.</p></div>
+<div class="town town--free"><span>бесплатно</span><b>Орша</b><p>Каждые выходные. Комплект привозим одним рейсом, чтобы ничего не ждать.</p></div>
+</div>
+<p style="margin-top:18px"><a class="btn btn--light" href="dostavka.html">Про доставку и монтаж</a></p>
+</div></section>
+
+<section class="section"><div class="wrap">
+<div class="sec-head"><div><p class="eyebrow">порядок</p><h2 class="h2">От замера<br><em>до кровли</em></h2></div>
+<p>Пять шагов: без «привезём что-нибудь похожее».</p></div>
+<div class="steps">
+<div class="step"><span>01</span><b>Замер</b><p>Снимаем размеры на объекте или считаем по вашему эскизу: длины скатов, свесы, углы, высота окон.</p></div><div class="step"><span>02</span><b>Расчёт и цвет</b><p>Считаем метраж и количество, показываем развёртку профиля и выкрасы RAL. Согласуем до раскроя.</p></div><div class="step"><span>03</span><b>Гибка</b><p>Раскраиваем гладкий металл с полимерным покрытием и гнём на листогибе. Кромки ровные, без заломов.</p></div><div class="step"><span>04</span><b>Доставка</b><p>Бесплатно в Ушачи, Лепель и Оршу каждые выходные. Длинномер везём аккуратно, без заломов.</p></div><div class="step"><span>05</span><b>Монтаж</b><p>Подскажем крепёж и порядок установки. Если нужно — приедем и смонтируем сами.</p></div>
+</div>
+</div></section>
+
+<section class="section section--dim"><div class="wrap">
+<div class="sec-head"><div><p class="eyebrow">изделия</p><h2 class="h2">Кровля, окна,<br><em>забор</em></h2></div>
+<p>Полный комплект на объект: от конька до отлива под окном.</p></div>
+<div class="gal">
+<figure class="wide"><img src="assets/img/hero.jpg" alt="Кровля с доборными элементами" width="1536" height="1024" loading="lazy"><figcaption>Кровля · конёк и ветровые</figcaption></figure>
+<figure><img src="assets/img/window.jpg" alt="Откосы и отлив на окне" width="1024" height="1024" loading="lazy"><figcaption>Окно · откосы и отлив</figcaption></figure>
+<figure><img src="assets/img/fence.jpg" alt="Металлический забор" width="1024" height="1024" loading="lazy"><figcaption>Забор · жалюзи</figcaption></figure>
+<figure><img src="assets/img/snow.jpg" alt="Снегозадержатели" width="1024" height="1024" loading="lazy"><figcaption>Кровля · снегозадержатели</figcaption></figure>
+<figure><img src="assets/img/bender.jpg" alt="Листогиб в работе" width="1024" height="1024" loading="lazy"><figcaption>Цех · гибка</figcaption></figure>
+<figure><img src="assets/img/stack.jpg" alt="Готовые изделия" width="1024" height="1024" loading="lazy"><figcaption>Готовые позиции · по RAL</figcaption></figure>
+</div>
+</div></section>
+
+<div class="fold" aria-hidden="true"><i style="left:18%"></i><i style="left:52%"></i><i style="left:81%"></i></div>
+
+<section class="section" id="zayavka"><div class="wrap"><div class="two">
+<div><p class="eyebrow">заявка</p><h2 class="h2" style="margin-bottom:14px">Считаем<br><em>по метражу</em></h2>
+<p style="color:#39423F;max-width:44ch">Назовите длины скатов или размеры окон, и цвет. Скажу метраж, количество позиций и когда сможем привезти. Фото объекта помогает больше, чем описание.</p>
+<div class="chips"><span class="chip">Длины скатов</span><span class="chip">Размеры окон</span><span class="chip">Цвет RAL</span><span class="chip">Толщина металла</span></div>
+<p class="hint">Цену называем после расчёта метража: она зависит от цвета, толщины и количества позиций.</p>
+<p style="margin-top:14px"><a class="btn btn--ghost" href="tel:+375291731278">Позвонить +375 (29) 173-12-78</a></p>
+</div>
+<div class="card"><form class="form" id="lead">
+<label>Как вас зовут<input type="text" id="lName" placeholder="Имя" required></label>
+<label>Телефон<input type="tel" id="lTel" placeholder="+375" required></label>
+<div class="row2"><label>Город<input type="text" id="lCity" placeholder="Ушачи, Лепель, Орша"></label><label>Что нужно<input type="text" id="lObj" placeholder="Коньки, отливы, забор"></label></div>
+<label>Размеры или задача<textarea id="lTask" placeholder="Скаты 12 м, нужен конёк и ветровые планки. Цвет как кровля, RAL 7016."></textarea></label>
+<button class="btn" type="submit">Отправить в WhatsApp</button>
+<p class="hint">Заявка откроется в WhatsApp: прикрепите фото кровли или окна, так расчёт будет точнее.</p>
+</form></div>
+</div></div></section>
+
+<section class="section"><div class="wrap"><div class="two">
+<div><p class="eyebrow">вопросы</p><h2 class="h2" style="margin-bottom:14px">Коротко<br><em>по делу</em></h2>
+<div class="faq"><details><summary>Из какого металла делаете?</summary><p>Гладкий лист с полимерным покрытием: полиэстер и матовые покрытия. Толщина 0,45–0,5 мм, цвет по каталогу RAL. Такой металл не выгорает за сезон и не требует покраски.</p></details><details><summary>Можно ли покрасить в цвет моей кровли?</summary><p>Да, подбираем по RAL. Привезите образец или назовите номер цвета и толщину: если у поставщика есть такой оттенок, сделаем в цвет.</p></details><details><summary>Какая минимальная партия?</summary><p>Делаем и одну планку. Ограничение не по количеству, а по длине листа: длинные элементы гнём из целого листа, без сварных стыков.</p></details><details><summary>Как быстро изготовите?</summary><p>Простые позиции — от нескольких дней, если цвет есть у поставщика. Точный срок называем при заказе: зависит от цвета и объёма.</p></details><details><summary>Доставка платная?</summary><p>Бесплатно в Ушачи, Лепель и Оршу каждые выходные. По другим адресам Витебской области — обсуждаем отдельно.</p></details><details><summary>Делаете откосы на окна?</summary><p>Да. Наружные откосы и отливы из гладкого металла: замеряем проём, гнём по размеру, ставим с заглушками и герметиком.</p></details><details><summary>Снегозадержатели на любую кровлю?</summary><p>На металлическую кровлю ставим трубчатые и пластинчатые. Под фальц и профнастил крепёж разный, поэтому уточняем тип кровли до изготовления.</p></details><details><summary>Даёте гарантию?</summary><p>На изделия — да: геометрия, покрытие, крепёж. Если планка пришла с заломом или не тем размером, переделываем.</p></details></div></div>
+<div>
+<div class="card" style="margin-bottom:12px"><p class="eyebrow">где находимся</p><h3 style="margin-bottom:8px">Ушачи, Витебская область</h3>
+<p style="margin:0;color:#39423F;font-size:13.5px">Производство в Ушачах. Доставка бесплатно в Ушачи, Лепель и Оршу каждые выходные, по другим адресам — по договорённости.</p>
+<p style="margin:12px 0 0"><a class="btn btn--ghost" href="https://yandex.by/maps/?text=%D0%A3%D1%88%D0%B0%D1%87%D0%B8%20%D0%91%D1%8B%D1%82%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%20%D0%BF%D0%BB%D1%8E%D1%81%20%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%B3%D0%B8%D0%B1%20%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB" target="_blank" rel="noopener">Открыть на карте</a></p></div>
+<div class="card"><p class="eyebrow">быстрая связь</p>
+<p style="margin:0 0 12px;font:700 1.35rem/1 var(--d);letter-spacing:-.02em"><a href="tel:+375291731278">+375 (29) 173-12-78</a></p>
+<div style="display:flex;gap:8px;flex-wrap:wrap"><a class="btn" href="https://wa.me/375291731278" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn--ghost" href="https://t.me/+375291731278" target="_blank" rel="noopener">Telegram</a><a class="btn btn--ghost" href="viber://chat?number=%2B375291731278">Viber</a></div></div>
+</div>
+</div></div></section>
+
+<section class="cta"><div class="wrap cta__in">
+<div><h2>Металл, который<br><em>встаёт по месту</em></h2><p>Свой листогиб, цвет по RAL и доставка по выходным: без ожидания чужого цеха.</p></div>
+<div class="cta__acts"><a class="btn btn--light" href="https://wa.me/375291731278" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn--light" href="tel:+375291731278">Позвонить</a></div>
+</div></section>
+</main>
+<footer class="footer"><div class="wrap">
+<div class="footer__top">
+<div class="footer__about"><a class="logo logo--f" href="index.html"><span class="logo__mark">Б+</span><span class="logo__txt"><b>Бытсервис плюс</b><i>листогиб</i></span></a>
+<p>Изделия из гладкого металла с полимерным покрытием: доборные элементы кровли, откосы, отливы, заборы. Ушачи, Витебская область.</p>
+<a class="footer__tel" href="tel:+375291731278">+375 (29) 173-12-78</a>
+</div>
+<div><h4>Разделы</h4><ul><li><a href="index.html">Главная</a></li><li><a href="produkciya.html">Продукция</a></li><li><a href="krovlya.html">Кровля</a></li><li><a href="otkosy.html">Окна</a></li><li><a href="zabori.html">Заборы</a></li><li><a href="dostavka.html">Доставка</a></li><li><a href="o-kompanii.html">О компании</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div>
+<div><h4>Продукция</h4><ul><li><a href="krovlya.html">Доборные элементы</a></li><li><a href="krovlya.html#sneg">Снегозадержатели</a></li><li><a href="otkosy.html">Откосы и отливы</a></li><li><a href="zabori.html">Заборы и жалюзи</a></li><li><a href="produkciya.html#drugoe">По вашему размеру</a></li><li><a href="dostavka.html">Доставка</a></li></ul></div>
+<div><h4>Связь</h4><ul><li><a href="tel:+375291731278">+375 (29) 173-12-78</a></li><li><a href="https://wa.me/375291731278" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="https://t.me/+375291731278" target="_blank" rel="noopener">Telegram</a></li><li><a href="https://yandex.by/maps/?text=%D0%A3%D1%88%D0%B0%D1%87%D0%B8%20%D0%91%D1%8B%D1%82%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%20%D0%BF%D0%BB%D1%8E%D1%81%20%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%B3%D0%B8%D0%B1%20%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB" target="_blank" rel="noopener">Ушачи, Витебская область</a></li></ul></div>
+</div>
+<div class="footer__bottom"><span>© <span id="yr">2026</span> Бытсервис плюс · листогиб</span>
+<span><a href="politika.html">Политика обработки персональных данных</a></span></div>
+</div></footer>
+<div class="mbar" role="navigation" aria-label="Быстрая связь">
+<a href="tel:+375291731278"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.36 2.3.56 3.5.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.56 3.5a1 1 0 0 1-.25 1z"/></svg>Позвонить</a>
+<a href="https://wa.me/375291731278" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m5.3 14.1c-.2.6-1.2 1.2-1.9 1.2-.5 0-1.1 0-2-.4a11 11 0 0 1-4.4-3.9c-.5-.8-.9-1.7-.9-2.5 0-.7.4-1.4.9-1.8.2-.2.4-.3.6-.3h.5c.2 0 .4 0 .5.4l.7 1.6c0 .2 0 .3-.1.5l-.4.5c-.1.2-.2.3 0 .5a8 8 0 0 0 3.4 2.9c.2.1.4.1.5-.1l.6-.7c.1-.2.3-.2.5-.1l1.6.8c.2.1.3.2.3.4s0 .5-.1.9"/></svg>WhatsApp</a>
+<a href="viber://chat?number=%2B375291731278"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C7 2 3 5.6 3 10c0 2.5 1.3 4.7 3.4 6.1L6 21l4-1.6c.6.1 1.3.2 2 .2 5 0 9-3.6 9-8s-4-8-9-8m3.6 11.3c-.4.9-1.9 1.6-2.7 1.5-2.4-.3-4.6-2.1-5.4-4.4-.3-.8.2-2 1-2.4.3-.2.7 0 .9.3l.7 1.2c.1.3 0 .5-.2.7-.3.2-.2.5.1.9.6.8 1.2 1.2 1.9 1.5.4.2.6 0 .8-.2s.4-.3.7-.2l1.3.6c.3.2.3.6.2.9"/></svg>Viber</a>
+<a href="https://t.me/+375291731278" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.8 4.2 2.9 11.4c-.9.3-.9 1.5 0 1.8l4.6 1.5 1.7 5.3c.2.7 1 .9 1.5.3l2.5-2.6 4.6 3.4c.6.4 1.4 0 1.5-.7l2.5-15c.1-.8-.6-1.4-1.5-1.2M9.4 14.3l8.4-5.6-6.8 6.6-.2 3z"/></svg>Telegram</a>
+</div>
+<script src="assets/js/main.v1.js"></script>
+</body>
+</html>
