@@ -152,7 +152,7 @@ body{padding-bottom:56px}}
 
 
 /* === бытовые услуги (Толочин) === */
-.svc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(10px,1.6vw,18px)}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(212px,1fr));gap:clamp(10px,1.6vw,18px)}
 .svc{background:var(--white);border:1px solid var(--line);display:flex;flex-direction:column;min-width:0;transition:transform .2s,box-shadow .2s}
 .svc:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(20,24,26,.09)}
 .svc__img{position:relative;overflow:hidden;background:#DDE2E1}
